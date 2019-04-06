@@ -12,7 +12,7 @@ with open('iris.csv', 'r') as f:
     reader = csv.reader(f)
     i = next(reader)
     rest = [row for row in reader]
-data = np.genfromtxt('iris.csv', delimiter = ',')
+data = np.genfromtxt('iris.csv', delimiter = ',')[1:]
 #lines = data.readlines()[1:]
 cm = str("cm")
 firstcol = data[:,0]
