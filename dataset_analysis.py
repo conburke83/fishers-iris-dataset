@@ -88,7 +88,18 @@ print ("The range of",(i[3]), "is: ", fourthcolrange, cm)
 # Print a line break
 print ('\n')
 
-
+# Creating four variables to calculate and store the range of each column.
+stdevfirstcol = round(np.stdev(data[:,0]),2)
+minsecondcol = round(np.min(data [:,1]),2)
+minthirdcol = round(np.min(data [:,2]),2)
+minfourthcol = round(np.min(data [:,3]),2)
+# Printing the output of each range, bringing in the associated header name and also calling the 'cm' variable
+print ("The range of",(i[0]), "is: ", stdevfirstcol, cm)
+print ("The range of",(i[1]), "is: ", secondcolrange, cm)
+print ("The range of",(i[2]), "is: ", thirdcolrange, cm)
+print ("The range of",(i[3]), "is: ", fourthcolrange, cm)
+# Print a line break
+print ('\n')
 
 
 for i in species_list:
