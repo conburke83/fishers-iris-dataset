@@ -42,10 +42,10 @@ meansecondcol = round(np.mean(data [:,1]),2)
 meanthirdcol = round(np.mean(data [:,2]),2)
 meanfourthcol = round(np.mean(data [:,3]),2)
 # Printing the output of each mean, bringing in the associated header name and also calling the 'cm' variable
-print ("The average",(i[0]), "is: ", meanfirstcol, cm)
-print ("The average",(i[1]), "is: ", meansecondcol, cm)
-print ("The average",(i[2]), "is: ", meanthirdcol, cm)
-print ("The average",(i[3]), "is: ", meanfourthcol, cm)
+print ("The average",(i[0]), "is", meanfirstcol, cm)
+print ("The average",(i[1]), "is", meansecondcol, cm)
+print ("The average",(i[2]), "is", meanthirdcol, cm)
+print ("The average",(i[3]), "is", meanfourthcol, cm)
 # Print a line break
 print ('\n')
 
@@ -55,10 +55,10 @@ maxsecondcol = round(np.max(data [:,1]),2)
 maxthirdcol = round(np.max(data [:,2]),2)
 maxfourthcol = round(np.max(data [:,3]),2)
 # Printing the output of each maximum, bringing in the associated header name and also calling the 'cm' variable
-print ("The maximum",(i[0]), "is: ", maxfirstcol, cm)
-print ("The maximum",(i[1]), "is: ", maxsecondcol, cm)
-print ("The maximum",(i[2]), "is: ", maxthirdcol, cm)
-print ("The maximum",(i[3]), "is: ", maxfourthcol, cm)
+print ("The maximum",(i[0]), "is", maxfirstcol, cm)
+print ("The maximum",(i[1]), "is", maxsecondcol, cm)
+print ("The maximum",(i[2]), "is", maxthirdcol, cm)
+print ("The maximum",(i[3]), "is", maxfourthcol, cm)
 # Print a line break
 print ('\n')
 
@@ -68,10 +68,10 @@ minsecondcol = round(np.min(data [:,1]),2)
 minthirdcol = round(np.min(data [:,2]),2)
 minfourthcol = round(np.min(data [:,3]),2)
 # Printing the output of each minimum, bringing in the associated header name and also calling the 'cm' variable
-print ("The minimum",(i[0]), "is: ", minfirstcol, cm)
-print ("The minimum",(i[1]), "is: ", minsecondcol, cm)
-print ("The minimum",(i[2]), "is: ", minthirdcol, cm)
-print ("The minimum",(i[3]), "is: ", minfourthcol, cm)
+print ("The minimum",(i[0]), "is", minfirstcol, cm)
+print ("The minimum",(i[1]), "is", minsecondcol, cm)
+print ("The minimum",(i[2]), "is", minthirdcol, cm)
+print ("The minimum",(i[3]), "is", minfourthcol, cm)
 # Print a line break
 print ('\n')
 
@@ -81,29 +81,26 @@ secondcolrange = round((maxsecondcol-minsecondcol),2)
 thirdcolrange = round((maxthirdcol-minthirdcol),2)
 fourthcolrange = round((maxfourthcol-minfourthcol),2)
 # Printing the output of each range, bringing in the associated header name and also calling the 'cm' variable
-print ("The range of",(i[0]), "is: ", firstcolrange, cm)
-print ("The range of",(i[1]), "is: ", secondcolrange, cm)
-print ("The range of",(i[2]), "is: ", thirdcolrange, cm)
-print ("The range of",(i[3]), "is: ", fourthcolrange, cm)
+print ("The range for",(i[0]), "is", firstcolrange, cm)
+print ("The range for",(i[1]), "is", secondcolrange, cm)
+print ("The range for",(i[2]), "is", thirdcolrange, cm)
+print ("The range for",(i[3]), "is", fourthcolrange, cm)
 # Print a line break
 print ('\n')
 
 # Creating four variables to calculate and store the range of each column.
-stdevfirstcol = round(np.stdev(data[:,0]),2)
-minsecondcol = round(np.min(data [:,1]),2)
-minthirdcol = round(np.min(data [:,2]),2)
-minfourthcol = round(np.min(data [:,3]),2)
+stdevfirstcol = round(np.std(data[:,0]),2)
+stdevsecondcol = round(np.std(data [:,1]),2)
+stdevthirdcol = round(np.std(data [:,2]),2)
+stdevfourthcol = round(np.std(data [:,3]),2)
 # Printing the output of each range, bringing in the associated header name and also calling the 'cm' variable
-print ("The range of",(i[0]), "is: ", stdevfirstcol, cm)
-print ("The range of",(i[1]), "is: ", secondcolrange, cm)
-print ("The range of",(i[2]), "is: ", thirdcolrange, cm)
-print ("The range of",(i[3]), "is: ", fourthcolrange, cm)
+print ("The standard deviation for",(i[0]), "is", stdevfirstcol, cm)
+print ("The standard deviation for",(i[1]), "is", stdevsecondcol, cm)
+print ("The standard deviation for",(i[2]), "is", stdevthirdcol, cm)
+print ("The standard deviation for",(i[3]), "is", stdevfourthcol, cm)
 # Print a line break
 print ('\n')
 
-
-for i in species_list:
-    print ("The average",(i[0]), "is: ", meanfirstcol, cm)
 
 # 05/04/2019
 # Code written to calculate the mean of each of the first 4 columns. Next block of work - Need to
@@ -115,3 +112,8 @@ for i in species_list:
 # variables to be used throught out the program, such as i, data, cm, firstcol, etc. Next block of work - Use
 # some further numpy functionality to perform more analysis, such as standard deviation, max and min, etc.
 # Then look at creating some graphical representations of the findings.
+# 09/04/2019
+# Code written to calculate and print the max, min, range and standard deviation. Code added to round the output
+# values to 2 decimal places. Added code to convert the dataset to a Pandas dataframe, and print the basic
+# dataframe info. Next blocks of work - Aggregate some of the calculated data by species. creating some graphical
+# representations of the findings. Export the output to a text file.
