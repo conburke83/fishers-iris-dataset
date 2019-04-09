@@ -11,6 +11,7 @@ http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#
 https://www.numpy.org/
 https://en.wikipedia.org/wiki/Iris_flower_data_set
 https://gist.github.com/curran/a08a1080b88344b0c8a7
+https://stackoverflow.com/questions/28836781/reading-column-names-alone-in-a-csv-file/35963291
 
 Summary Description of the dataset
 Fisher's Iris dataset is a multivariate dataset created by British statistician and biologist Ronald Fisher (with the assistance of Edgar Anderson) in a 1936 scientific paper examining the use of multiple measurements in taxonomic problems. The dataset represents a good example of linear discriminant analysis. Linear discriminant analysis is a method used in statistics to find a linear combination of features that characterizes or separates two or more classes of objects or events.
