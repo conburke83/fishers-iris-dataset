@@ -37,10 +37,10 @@ secondcol = data[:,1]
 thirdcol = data[:,2]
 fourthcol = data[:,3]
 # Creating four variables to calculate and store the mean of each column, using the numpy funtion 'mean'.
-meanfirstcol = np.mean(data[:,0])
-meansecondcol = np.mean(data [:,1])
-meanthirdcol = np.mean(data [:,2])
-meanfourthcol = np.mean(data [:,3])
+meanfirstcol = round(np.mean(data[:,0]),2)
+meansecondcol = round(np.mean(data [:,1]),2)
+meanthirdcol = round(np.mean(data [:,2]),2)
+meanfourthcol = round(np.mean(data [:,3]),2)
 # Printing the output of each mean, bringing in the associated header name and also calling the 'cm' variable
 print ("The average",(i[0]), "is: ", meanfirstcol, cm)
 print ("The average",(i[1]), "is: ", meansecondcol, cm)
@@ -50,10 +50,10 @@ print ("The average",(i[3]), "is: ", meanfourthcol, cm)
 print ('\n')
 
 # Creating four variables to calculate and store the maximum value of each column, using the numpy funtion 'max'.
-maxfirstcol = np.max(data[:,0])
-maxsecondcol = np.max(data [:,1])
-maxthirdcol = np.max(data [:,2])
-maxfourthcol = np.max(data [:,3])
+maxfirstcol = round(np.max(data[:,0]),2)
+maxsecondcol = round(np.max(data [:,1]),2)
+maxthirdcol = round(np.max(data [:,2]),2)
+maxfourthcol = round(np.max(data [:,3]),2)
 # Printing the output of each maximum, bringing in the associated header name and also calling the 'cm' variable
 print ("The maximum",(i[0]), "is: ", maxfirstcol, cm)
 print ("The maximum",(i[1]), "is: ", maxsecondcol, cm)
@@ -63,10 +63,10 @@ print ("The maximum",(i[3]), "is: ", maxfourthcol, cm)
 print ('\n')
 
 # Creating four variables to calculate and store the minimum value of each column, using the numpy funtion 'min'.
-minfirstcol = np.min(data[:,0])
-minsecondcol = np.min(data [:,1])
-minthirdcol = np.min(data [:,2])
-minfourthcol = np.min(data [:,3])
+minfirstcol = round(np.min(data[:,0]),2)
+minsecondcol = round(np.min(data [:,1]),2)
+minthirdcol = round(np.min(data [:,2]),2)
+minfourthcol = round(np.min(data [:,3]),2)
 # Printing the output of each minimum, bringing in the associated header name and also calling the 'cm' variable
 print ("The minimum",(i[0]), "is: ", minfirstcol, cm)
 print ("The minimum",(i[1]), "is: ", minsecondcol, cm)
@@ -76,10 +76,10 @@ print ("The minimum",(i[3]), "is: ", minfourthcol, cm)
 print ('\n')
 
 # Creating four variables to calculate and store the range of each column.
-firstcolrange = (maxfirstcol-minfirstcol)
-secondcolrange = (maxsecondcol-minsecondcol)
-thirdcolrange = (maxthirdcol-minthirdcol)
-fourthcolrange = (maxfourthcol-minfourthcol)
+firstcolrange = round((maxfirstcol-minfirstcol),2)
+secondcolrange = round((maxsecondcol-minsecondcol),2)
+thirdcolrange = round((maxthirdcol-minthirdcol),2)
+fourthcolrange = round((maxfourthcol-minfourthcol),2)
 # Printing the output of each range, bringing in the associated header name and also calling the 'cm' variable
 print ("The range of",(i[0]), "is: ", firstcolrange, cm)
 print ("The range of",(i[1]), "is: ", secondcolrange, cm)
