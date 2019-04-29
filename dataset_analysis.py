@@ -109,18 +109,13 @@ iris = sns.load_dataset("iris")
 # Creating variable 'g' and calling the Seaborn function pairplot into the variable. The pairplot function
 # contains a palette of pre-defined plots which will be mapped for the given dataset. Within this variable we 
 # are also defining the aesthetics to be used for the plots. 'Hue' and 'palette' define the colour system for
-# the plots.e
-g = sns.pairplot(iris,hue='species', palette='husl', markers=',', height=2.5, plot_kws=
-    {
-    "s":40,
-    "alpha":1.0,
-    'lw':0.5,
-    'edgecolor':'k'
-    })
-plt.legend(loc='upper center', bbox_to_anchor=(1.10, 1.0), ncol=1) #vertical legend
-plt.legend(loc='lower center', bbox_to_anchor=(0.0, -0.15), ncol=3) #horizontal legend bottom
-plt.legend(loc='upper left', bbox_to_anchor=(0.0, 1.15), ncol=3) #horizontal legend top
-g.savefig('Test.png', bbox_inches='tight')
+# the plots. 'Markers' defines the type of symbol used to mark the data-points in the plot. 'Height' defines
+# the height of each plot in inches. 'Plot_kws' defines further attributes for the data-points in the plot.
+g = sns.pairplot(iris,hue='species', palette='husl', markers='+', height=2.5, plot_kws=
+    {"s":30,"alpha":1,'lw':1,'edgecolor':'w'})
+# Save the plots as a .png image file in present working directory.
+g.savefig('Test.png')
+# Display the plots on screen for the user.
 plt.show()
 
 
@@ -139,3 +134,4 @@ plt.show()
 # output values to 2 decimal places. Added code to convert the dataset to a Pandas dataframe, and print the
 # basic dataframe info. Next blocks of work - Aggregate some of the calculated data by species. creating some
 # graphical representations of the findings. Export the output to a text file.
+
