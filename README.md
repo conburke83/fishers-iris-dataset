@@ -22,8 +22,9 @@ https://stackoverflow.com/questions/26597116/seaborn-plots-not-showing-up
 https://stackoverflow.com/questions/30336324/seaborn-load-dataset
 https://github.com/f90/Wave-U-Net/issues/11
 https://stackoverflow.com/questions/37815774/seaborn-pairplot-legend-how-to-control-position?noredirect=1&lq=1
+https://seaborn.pydata.org/tutorial/axis_grids.html
 
-Summary Description of the dataset
+Summary Description of the Dataset
 Fisher's Iris dataset is a multivariate dataset created by British statistician and biologist Ronald Fisher (with the assistance of Edgar Anderson) in a 1936 scientific paper examining the use of multiple measurements in taxonomic problems. The dataset represents a good example of linear discriminant analysis. Linear discriminant analysis is a method used in statistics to find a linear combination of features that characterizes or separates two or more classes of objects or events.
 The data-set consists of 50 samples from three species (150 samples in total) of the Iris flower (Iris setosa, Iris virginica and Iris versicolor). The samples were "all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus". 
 Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters.
@@ -37,6 +38,9 @@ The dataset therefore contains 5 columns in total.
 One of the most interesting things about the datset as shown by analysis is that one species is linearly separable from the other two, but the other two are not linearly comparable to each other.  Fisher's linear discriminant model can only be obtained when the object species are known
 Due to these characteristics of the dataset it has become famous for use as a test-case and in the teaching of statistics, pattern recognition, machine learning, data-mining and data analysis.
 
-Summary of the analysis performed
+Summary of the Analysis Performed
+Calculated and analysed the Average, Maximum, Minimum, Range and Standard Deviation for each of Sepal Length, Sepal Width, Petal Length and Petal Width.
+Created graphical representations of the data. Specifically, histograms and scatter diagrams for each combination of Sepal Length, Sepal Width, Petal Length, Petal Width versus Sepal Length, Sepal Width, Petal Length, Petal Width. 16 plots created in total, covering all of these different x-axis versus y-axis combinations.
 
-Summary of the results
+Summary of the Results
+The main observation from the analysis is that there is linear discrimination of the species Setosa. This is particularly noticable in the plots showing the visual representations of the data. Species Versicolour and Virginica are linearly aligned to on another, while Setosa is linearly seperated from them.

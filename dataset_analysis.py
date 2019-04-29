@@ -118,7 +118,6 @@ g.savefig('Test.png')
 # Display the plots on screen for the user.
 plt.show()
 
-
 # 05/04/2019
 # Code written to calculate the mean of each of the first 4 columns. Next block of work - Need to
 # elaborate on this to make the program skip over the header row in the .csv file (rather than just 
@@ -133,5 +132,8 @@ plt.show()
 # Code written to calculate and print the max, min, range and standard deviation. Code added to round the
 # output values to 2 decimal places. Added code to convert the dataset to a Pandas dataframe, and print the
 # basic dataframe info. Next blocks of work - Aggregate some of the calculated data by species. creating some
-# graphical representations of the findings. Export the output to a text file.
-
+# graphical representations of the findings.
+# 29/04/2019
+# Code written to import the Seaborn module and create graphical representations, or plots, of the dataset
+# using the pairplot function of Seaborn. Writing the plots to a .png file, and also displaying the plots
+# for the user at runtime.
