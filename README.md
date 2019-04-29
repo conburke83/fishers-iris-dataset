@@ -17,7 +17,11 @@ https://stackoverflow.com/questions/5982206/how-to-print-a-linebreak-in-a-python
 https://www.geeksforgeeks.org/round-function-python/
 https://stackoverflow.com/questions/34050491/standard-deviation-in-numpy
 https://stackoverflow.com/questions/7152762/how-to-redirect-print-output-to-a-file-using-python
-
+https://matplotlib.org/users/pyplot_tutorial.html
+https://stackoverflow.com/questions/26597116/seaborn-plots-not-showing-up
+https://stackoverflow.com/questions/30336324/seaborn-load-dataset
+https://github.com/f90/Wave-U-Net/issues/11
+https://stackoverflow.com/questions/37815774/seaborn-pairplot-legend-how-to-control-position?noredirect=1&lq=1
 
 Summary Description of the dataset
 Fisher's Iris dataset is a multivariate dataset created by British statistician and biologist Ronald Fisher (with the assistance of Edgar Anderson) in a 1936 scientific paper examining the use of multiple measurements in taxonomic problems. The dataset represents a good example of linear discriminant analysis. Linear discriminant analysis is a method used in statistics to find a linear combination of features that characterizes or separates two or more classes of objects or events.

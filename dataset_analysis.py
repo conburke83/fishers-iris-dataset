@@ -6,6 +6,8 @@ import numpy as np # Importing the numpy module to allow usage of inbuilt pyton 
 # analysis
 import csv # Importing the csv module to allow usage of inbuilt pyton functions for .csv files
 import pandas as pd # Data processing, CSV file I/O
+import matplotlib.pyplot as plt #Importing the pyplot function of the matplotlib module, for creating graphs
+import seaborn as sns #Importing the seaborn module, for creating graphs
 
 # Using pandas to import the iris.csv file and creating a dataframe named 'fishers_iris_csv'
 fishers_iris_csv = 'iris.csv'
@@ -26,7 +28,7 @@ with open('iris.csv', 'r') as f:
     i = next(reader)
     rest = [row for row in reader]
 # Importing the .csv file as a delimited file, skipping the header row, and naming it 'data'. 'Data' can be 
-# called later in the program for perofmring calculations and analysis on the dataset 
+# called later in the program for performing calculations and analysis on the dataset 
 data = np.genfromtxt('iris.csv', delimiter = ',')[1:]
 # Creating a simple variable 'cm' to store the string "cm" for use in strings later in the program
 cm = str("cm")
@@ -101,6 +103,26 @@ print ("The standard deviation for",(i[3]), "is", stdevfourthcol, cm)
 # Print a line break
 print ('\n')
 
+# Importing the 'Iris' dataset from the Seaborn online dataset repository on Github, and giving it the
+# variable name 'iris'
+iris = sns.load_dataset("iris")
+# Creating variable 'g' and calling the Seaborn function pairplot into the variable. The pairplot function
+# contains a palette of pre-defined plots which will be mapped for the given dataset. Within this variable we 
+# are also defining the aesthetics to be used for the plots. 'Hue' and 'palette' define the colour system for
+# the plots.e
+g = sns.pairplot(iris,hue='species', palette='husl', markers=',', height=2.5, plot_kws=
+    {
+    "s":40,
+    "alpha":1.0,
+    'lw':0.5,
+    'edgecolor':'k'
+    })
+plt.legend(loc='upper center', bbox_to_anchor=(1.10, 1.0), ncol=1) #vertical legend
+plt.legend(loc='lower center', bbox_to_anchor=(0.0, -0.15), ncol=3) #horizontal legend bottom
+plt.legend(loc='upper left', bbox_to_anchor=(0.0, 1.15), ncol=3) #horizontal legend top
+g.savefig('Test.png', bbox_inches='tight')
+plt.show()
+
 
 # 05/04/2019
 # Code written to calculate the mean of each of the first 4 columns. Next block of work - Need to
@@ -113,7 +135,7 @@ print ('\n')
 # some further numpy functionality to perform more analysis, such as standard deviation, max and min, etc.
 # Then look at creating some graphical representations of the findings.
 # 09/04/2019
-# Code written to calculate and print the max, min, range and standard deviation. Code added to round the output
-# values to 2 decimal places. Added code to convert the dataset to a Pandas dataframe, and print the basic
-# dataframe info. Next blocks of work - Aggregate some of the calculated data by species. creating some graphical
-# representations of the findings. Export the output to a text file.
+# Code written to calculate and print the max, min, range and standard deviation. Code added to round the
+# output values to 2 decimal places. Added code to convert the dataset to a Pandas dataframe, and print the
+# basic dataframe info. Next blocks of work - Aggregate some of the calculated data by species. creating some
+# graphical representations of the findings. Export the output to a text file.
